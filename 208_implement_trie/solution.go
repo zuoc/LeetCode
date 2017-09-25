@@ -17,14 +17,6 @@ func NewNode(c rune) *Node {
 	}
 }
 
-func (n Node) IsWord() bool {
-	return n.isLeaf
-}
-
-func (n *Node) setWord() {
-	n.isLeaf = true
-}
-
 type Trie struct {
 	root *Node
 }
