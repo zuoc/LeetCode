@@ -1,4 +1,4 @@
-// 查表法
+// 查表法~
 package _1_two_sum
 
 func twoSum(nums []int, target int) []int {
