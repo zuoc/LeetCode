@@ -1,4 +1,4 @@
-// 备忘录 + 并查集
+// 并查集
 package _128_Longest_Consecutive_Sequence
 
 type unionFind struct {
@@ -40,15 +40,15 @@ func (uf *unionFind) union(x, y int) {
 
 func newUnionFind(n int) *unionFind {
 	seq := make([]int, n, n)
-	siez := make([]int, n, n)
+	size := make([]int, n, n)
 	for i := 0; i < len(seq); i++ {
 		seq[i] = i
-		siez[i] = 1
+		size[i] = 1
 	}
 
 	return &unionFind{
 		seq:    seq,
-		size:   siez,
+		size:   size,
 		maxLen: 1,
 	}
 }
